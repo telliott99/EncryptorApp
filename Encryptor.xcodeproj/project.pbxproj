@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		750627621C1E1A7F006B100B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750627611C1E1A7F006B100B /* AppDelegate.swift */; };
+		750627641C1E1A7F006B100B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750627631C1E1A7F006B100B /* Assets.xcassets */; };
+		750627671C1E1A7F006B100B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 750627651C1E1A7F006B100B /* MainMenu.xib */; };
+		750627721C1E1A7F006B100B /* EncryptorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750627711C1E1A7F006B100B /* EncryptorTests.swift */; };
+		7506277D1C1E1A7F006B100B /* EncryptorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7506277C1C1E1A7F006B100B /* EncryptorUITests.swift */; };
+		7506278B1C1E1AA0006B100B /* StringStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7506278A1C1E1AA0006B100B /* StringStuff.swift */; };
+		7506278D1C1E1BF3006B100B /* IntStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7506278C1C1E1BF3006B100B /* IntStuff.swift */; };
+		7506278F1C1E1C23006B100B /* BinaryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7506278E1C1E1C23006B100B /* BinaryData.swift */; };
+		750627911C1E2060006B100B /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750627901C1E2060006B100B /* Tests.swift */; };
+		750627931C1E2095006B100B /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750627921C1E2095006B100B /* Random.swift */; };
+		750627951C1E2175006B100B /* Salt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750627941C1E2175006B100B /* Salt.swift */; };
+		750627971C1E218D006B100B /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750627961C1E218D006B100B /* Key.swift */; };
+		7506279C1C1E22BF006B100B /* Encryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7506279B1C1E22BF006B100B /* Encryptor.swift */; };
+		7593B7FC1C1E238600839ECA /* EncryptOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7593B7FB1C1E238600839ECA /* EncryptOne.swift */; };
+		759A12741C1E257A0081E8F3 /* DecryptOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759A12731C1E257A0081E8F3 /* DecryptOne.swift */; };
+		75E753091C1E292D007C9335 /* EncryptMany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E753081C1E292D007C9335 /* EncryptMany.swift */; };
+		75E7530B1C1E2D5D007C9335 /* DecryptMany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E7530A1C1E2D5D007C9335 /* DecryptMany.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7506276E1C1E1A7F006B100B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 750627561C1E1A7F006B100B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7506275D1C1E1A7F006B100B;
+			remoteInfo = Encryptor;
+		};
+		750627791C1E1A7F006B100B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 750627561C1E1A7F006B100B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7506275D1C1E1A7F006B100B;
+			remoteInfo = Encryptor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7506275E1C1E1A7F006B100B /* Encryptor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Encryptor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		750627611C1E1A7F006B100B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		750627631C1E1A7F006B100B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		750627661C1E1A7F006B100B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		750627681C1E1A7F006B100B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7506276D1C1E1A7F006B100B /* EncryptorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EncryptorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		750627711C1E1A7F006B100B /* EncryptorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptorTests.swift; sourceTree = "<group>"; };
+		750627731C1E1A7F006B100B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		750627781C1E1A7F006B100B /* EncryptorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EncryptorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7506277C1C1E1A7F006B100B /* EncryptorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptorUITests.swift; sourceTree = "<group>"; };
+		7506277E1C1E1A7F006B100B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7506278A1C1E1AA0006B100B /* StringStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringStuff.swift; path = ../StringStuff.swift; sourceTree = "<group>"; };
+		7506278C1C1E1BF3006B100B /* IntStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntStuff.swift; path = ../IntStuff.swift; sourceTree = "<group>"; };
+		7506278E1C1E1C23006B100B /* BinaryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryData.swift; sourceTree = "<group>"; };
+		750627901C1E2060006B100B /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		750627921C1E2095006B100B /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		750627941C1E2175006B100B /* Salt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Salt.swift; sourceTree = "<group>"; };
+		750627961C1E218D006B100B /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
+		750627981C1E221A006B100B /* Encryptor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Encryptor-Bridging-Header.h"; sourceTree = "<group>"; };
+		7506279B1C1E22BF006B100B /* Encryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encryptor.swift; sourceTree = "<group>"; };
+		7593B7FB1C1E238600839ECA /* EncryptOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptOne.swift; sourceTree = "<group>"; };
+		759A12731C1E257A0081E8F3 /* DecryptOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecryptOne.swift; sourceTree = "<group>"; };
+		75E753081C1E292D007C9335 /* EncryptMany.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptMany.swift; sourceTree = "<group>"; };
+		75E7530A1C1E2D5D007C9335 /* DecryptMany.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecryptMany.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7506275B1C1E1A7F006B100B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7506276A1C1E1A7F006B100B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		750627751C1E1A7F006B100B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		750627551C1E1A7F006B100B = {
+			isa = PBXGroup;
+			children = (
+				750627601C1E1A7F006B100B /* Encryptor */,
+				750627701C1E1A7F006B100B /* EncryptorTests */,
+				7506277B1C1E1A7F006B100B /* EncryptorUITests */,
+				7506275F1C1E1A7F006B100B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7506275F1C1E1A7F006B100B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7506275E1C1E1A7F006B100B /* Encryptor.app */,
+				7506276D1C1E1A7F006B100B /* EncryptorTests.xctest */,
+				750627781C1E1A7F006B100B /* EncryptorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		750627601C1E1A7F006B100B /* Encryptor */ = {
+			isa = PBXGroup;
+			children = (
+				750627611C1E1A7F006B100B /* AppDelegate.swift */,
+				7506278E1C1E1C23006B100B /* BinaryData.swift */,
+				759A12731C1E257A0081E8F3 /* DecryptOne.swift */,
+				75E7530A1C1E2D5D007C9335 /* DecryptMany.swift */,
+				7506279B1C1E22BF006B100B /* Encryptor.swift */,
+				7593B7FB1C1E238600839ECA /* EncryptOne.swift */,
+				75E753081C1E292D007C9335 /* EncryptMany.swift */,
+				7506278C1C1E1BF3006B100B /* IntStuff.swift */,
+				750627961C1E218D006B100B /* Key.swift */,
+				750627921C1E2095006B100B /* Random.swift */,
+				7506278A1C1E1AA0006B100B /* StringStuff.swift */,
+				750627941C1E2175006B100B /* Salt.swift */,
+				750627901C1E2060006B100B /* Tests.swift */,
+				750627631C1E1A7F006B100B /* Assets.xcassets */,
+				750627651C1E1A7F006B100B /* MainMenu.xib */,
+				750627681C1E1A7F006B100B /* Info.plist */,
+				750627981C1E221A006B100B /* Encryptor-Bridging-Header.h */,
+			);
+			path = Encryptor;
+			sourceTree = "<group>";
+		};
+		750627701C1E1A7F006B100B /* EncryptorTests */ = {
+			isa = PBXGroup;
+			children = (
+				750627711C1E1A7F006B100B /* EncryptorTests.swift */,
+				750627731C1E1A7F006B100B /* Info.plist */,
+			);
+			path = EncryptorTests;
+			sourceTree = "<group>";
+		};
+		7506277B1C1E1A7F006B100B /* EncryptorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7506277C1C1E1A7F006B100B /* EncryptorUITests.swift */,
+				7506277E1C1E1A7F006B100B /* Info.plist */,
+			);
+			path = EncryptorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7506275D1C1E1A7F006B100B /* Encryptor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 750627811C1E1A7F006B100B /* Build configuration list for PBXNativeTarget "Encryptor" */;
+			buildPhases = (
+				7506275A1C1E1A7F006B100B /* Sources */,
+				7506275B1C1E1A7F006B100B /* Frameworks */,
+				7506275C1C1E1A7F006B100B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Encryptor;
+			productName = Encryptor;
+			productReference = 7506275E1C1E1A7F006B100B /* Encryptor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7506276C1C1E1A7F006B100B /* EncryptorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 750627841C1E1A7F006B100B /* Build configuration list for PBXNativeTarget "EncryptorTests" */;
+			buildPhases = (
+				750627691C1E1A7F006B100B /* Sources */,
+				7506276A1C1E1A7F006B100B /* Frameworks */,
+				7506276B1C1E1A7F006B100B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7506276F1C1E1A7F006B100B /* PBXTargetDependency */,
+			);
+			name = EncryptorTests;
+			productName = EncryptorTests;
+			productReference = 7506276D1C1E1A7F006B100B /* EncryptorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		750627771C1E1A7F006B100B /* EncryptorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 750627871C1E1A7F006B100B /* Build configuration list for PBXNativeTarget "EncryptorUITests" */;
+			buildPhases = (
+				750627741C1E1A7F006B100B /* Sources */,
+				750627751C1E1A7F006B100B /* Frameworks */,
+				750627761C1E1A7F006B100B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7506277A1C1E1A7F006B100B /* PBXTargetDependency */,
+			);
+			name = EncryptorUITests;
+			productName = EncryptorUITests;
+			productReference = 750627781C1E1A7F006B100B /* EncryptorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		750627561C1E1A7F006B100B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Tom Elliott";
+				TargetAttributes = {
+					7506275D1C1E1A7F006B100B = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					7506276C1C1E1A7F006B100B = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 7506275D1C1E1A7F006B100B;
+					};
+					750627771C1E1A7F006B100B = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 7506275D1C1E1A7F006B100B;
+					};
+				};
+			};
+			buildConfigurationList = 750627591C1E1A7F006B100B /* Build configuration list for PBXProject "Encryptor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 750627551C1E1A7F006B100B;
+			productRefGroup = 7506275F1C1E1A7F006B100B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7506275D1C1E1A7F006B100B /* Encryptor */,
+				7506276C1C1E1A7F006B100B /* EncryptorTests */,
+				750627771C1E1A7F006B100B /* EncryptorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7506275C1C1E1A7F006B100B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				750627641C1E1A7F006B100B /* Assets.xcassets in Resources */,
+				750627671C1E1A7F006B100B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7506276B1C1E1A7F006B100B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		750627761C1E1A7F006B100B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7506275A1C1E1A7F006B100B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7506278B1C1E1AA0006B100B /* StringStuff.swift in Sources */,
+				7593B7FC1C1E238600839ECA /* EncryptOne.swift in Sources */,
+				75E753091C1E292D007C9335 /* EncryptMany.swift in Sources */,
+				750627951C1E2175006B100B /* Salt.swift in Sources */,
+				750627911C1E2060006B100B /* Tests.swift in Sources */,
+				750627931C1E2095006B100B /* Random.swift in Sources */,
+				7506278D1C1E1BF3006B100B /* IntStuff.swift in Sources */,
+				750627971C1E218D006B100B /* Key.swift in Sources */,
+				7506278F1C1E1C23006B100B /* BinaryData.swift in Sources */,
+				7506279C1C1E22BF006B100B /* Encryptor.swift in Sources */,
+				75E7530B1C1E2D5D007C9335 /* DecryptMany.swift in Sources */,
+				759A12741C1E257A0081E8F3 /* DecryptOne.swift in Sources */,
+				750627621C1E1A7F006B100B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		750627691C1E1A7F006B100B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				750627721C1E1A7F006B100B /* EncryptorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		750627741C1E1A7F006B100B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7506277D1C1E1A7F006B100B /* EncryptorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7506276F1C1E1A7F006B100B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7506275D1C1E1A7F006B100B /* Encryptor */;
+			targetProxy = 7506276E1C1E1A7F006B100B /* PBXContainerItemProxy */;
+		};
+		7506277A1C1E1A7F006B100B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7506275D1C1E1A7F006B100B /* Encryptor */;
+			targetProxy = 750627791C1E1A7F006B100B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		750627651C1E1A7F006B100B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				750627661C1E1A7F006B100B /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7506277F1C1E1A7F006B100B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		750627801C1E1A7F006B100B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		750627821C1E1A7F006B100B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Encryptor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = te.Encryptor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Encryptor/Encryptor-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		750627831C1E1A7F006B100B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Encryptor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = te.Encryptor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Encryptor/Encryptor-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		750627851C1E1A7F006B100B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EncryptorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = te.EncryptorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Encryptor.app/Contents/MacOS/Encryptor";
+			};
+			name = Debug;
+		};
+		750627861C1E1A7F006B100B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EncryptorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = te.EncryptorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Encryptor.app/Contents/MacOS/Encryptor";
+			};
+			name = Release;
+		};
+		750627881C1E1A7F006B100B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EncryptorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = te.EncryptorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Encryptor;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		750627891C1E1A7F006B100B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EncryptorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = te.EncryptorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Encryptor;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		750627591C1E1A7F006B100B /* Build configuration list for PBXProject "Encryptor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7506277F1C1E1A7F006B100B /* Debug */,
+				750627801C1E1A7F006B100B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		750627811C1E1A7F006B100B /* Build configuration list for PBXNativeTarget "Encryptor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				750627821C1E1A7F006B100B /* Debug */,
+				750627831C1E1A7F006B100B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		750627841C1E1A7F006B100B /* Build configuration list for PBXNativeTarget "EncryptorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				750627851C1E1A7F006B100B /* Debug */,
+				750627861C1E1A7F006B100B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		750627871C1E1A7F006B100B /* Build configuration list for PBXNativeTarget "EncryptorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				750627881C1E1A7F006B100B /* Debug */,
+				750627891C1E1A7F006B100B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 750627561C1E1A7F006B100B /* Project object */;
+}
