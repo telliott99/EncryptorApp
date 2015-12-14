@@ -28,7 +28,13 @@ extension Encryptor {
         // that's what we get from stretching
         // truncate key to length 16
         
-        let keyData = key.data[0..<stdBufferSize]
+        // stretched self.key is 20 bytes, must truncate
+        let key16Data = self.key.data[0..<stdBufferSize]
+        
+        // fix problem with "slice"
+        // not required here, only in Decrypt, but why not?
+        let keyData = Array<UInt8>(key16Data)
+        
         let keyLen = keyData.count
         print("keyLen: \(keyLen)")
         
@@ -71,6 +77,8 @@ extension Encryptor {
         let n = 16
         var ret = BinaryData()
         var tmp = BinaryData()
+        
+        // Encryptor class initializes an iv upon instantiation
         var currentIV = self.iv
         
         while i < input.count {

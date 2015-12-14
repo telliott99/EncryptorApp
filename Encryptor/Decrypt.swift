@@ -19,10 +19,11 @@ extension Encryptor {
         let algorithm = CCAlgorithm(kCCAlgorithmAES)
         let options = CCOptions(0)  // CBC
         
-        var keyData = [UInt8]()
-        for i in 0..<stdBufferSize {
-            keyData.append(key.data[i])
-        }
+        // stretched self.key is 20 bytes, must truncate
+        let key16Data = self.key.data[0..<stdBufferSize]
+        
+        // fix problem with "slice"
+        let keyData = Array<UInt8>(key16Data)
         
         let keyLen = keyData.count
         print("keyLen: \(keyLen)")

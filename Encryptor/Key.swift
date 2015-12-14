@@ -22,6 +22,8 @@ class Key: BinaryData {
         // Int8 not UInt8!
         // let pwPointer = UnsafePointer<Int8>(pwBytes)
         
+        // typealias Salt = BinaryData
+
         var salt: Salt
         if saltIn.data.count == 0 {
             salt = randomBinaryData(6)
@@ -36,6 +38,7 @@ class Key: BinaryData {
         let saltPointer = UnsafePointer<UInt8>(salt.data)
         
         let alg = CCPBKDFAlgorithm(kCCPBKDF2)
+        
         let hmac = CCPseudoRandomAlgorithm(kCCPRFHmacAlgSHA1)
         
         /*
@@ -51,11 +54,12 @@ class Key: BinaryData {
         Int(CC_SHA1_DIGEST_LENGTH),
         1000)
         
-        found out the result is variable!!!
+        however, I found out the result is variable!
+        (but not in a Playground) !!
         
         */
         
-        let rounds = UInt32(1500000)
+        let rounds = UInt32(1500001)
         
         // Derive the key
         let key = Array<UInt8>(

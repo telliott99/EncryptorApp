@@ -42,7 +42,7 @@ class BinaryData : CustomStringConvertible, Indexable {
     
     var startIndex: Int {
         get {
-            return data.count
+            return 0
         }
     }
     

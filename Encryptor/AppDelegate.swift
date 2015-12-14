@@ -13,6 +13,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // testEncrypt()
         // testEncryptorEncryptDecrypt()
         testMultiples()
+        self.window.orderOut(self)
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
