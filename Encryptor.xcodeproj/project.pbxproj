@@ -20,10 +20,8 @@
 		750627951C1E2175006B100B /* Salt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750627941C1E2175006B100B /* Salt.swift */; };
 		750627971C1E218D006B100B /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750627961C1E218D006B100B /* Key.swift */; };
 		7506279C1C1E22BF006B100B /* Encryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7506279B1C1E22BF006B100B /* Encryptor.swift */; };
-		7593B7FC1C1E238600839ECA /* EncryptOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7593B7FB1C1E238600839ECA /* EncryptOne.swift */; };
-		759A12741C1E257A0081E8F3 /* DecryptOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759A12731C1E257A0081E8F3 /* DecryptOne.swift */; };
-		75E753091C1E292D007C9335 /* EncryptMany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E753081C1E292D007C9335 /* EncryptMany.swift */; };
-		75E7530B1C1E2D5D007C9335 /* DecryptMany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E7530A1C1E2D5D007C9335 /* DecryptMany.swift */; };
+		7593B7FC1C1E238600839ECA /* Encrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7593B7FB1C1E238600839ECA /* Encrypt.swift */; };
+		759A12741C1E257A0081E8F3 /* Decrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759A12731C1E257A0081E8F3 /* Decrypt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,10 +62,8 @@
 		750627961C1E218D006B100B /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 		750627981C1E221A006B100B /* Encryptor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Encryptor-Bridging-Header.h"; sourceTree = "<group>"; };
 		7506279B1C1E22BF006B100B /* Encryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encryptor.swift; sourceTree = "<group>"; };
-		7593B7FB1C1E238600839ECA /* EncryptOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptOne.swift; sourceTree = "<group>"; };
-		759A12731C1E257A0081E8F3 /* DecryptOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecryptOne.swift; sourceTree = "<group>"; };
-		75E753081C1E292D007C9335 /* EncryptMany.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptMany.swift; sourceTree = "<group>"; };
-		75E7530A1C1E2D5D007C9335 /* DecryptMany.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecryptMany.swift; sourceTree = "<group>"; };
+		7593B7FB1C1E238600839ECA /* Encrypt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encrypt.swift; sourceTree = "<group>"; };
+		759A12731C1E257A0081E8F3 /* Decrypt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decrypt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,11 +116,9 @@
 			children = (
 				750627611C1E1A7F006B100B /* AppDelegate.swift */,
 				7506278E1C1E1C23006B100B /* BinaryData.swift */,
-				759A12731C1E257A0081E8F3 /* DecryptOne.swift */,
-				75E7530A1C1E2D5D007C9335 /* DecryptMany.swift */,
+				759A12731C1E257A0081E8F3 /* Decrypt.swift */,
 				7506279B1C1E22BF006B100B /* Encryptor.swift */,
-				7593B7FB1C1E238600839ECA /* EncryptOne.swift */,
-				75E753081C1E292D007C9335 /* EncryptMany.swift */,
+				7593B7FB1C1E238600839ECA /* Encrypt.swift */,
 				7506278C1C1E1BF3006B100B /* IntStuff.swift */,
 				750627961C1E218D006B100B /* Key.swift */,
 				750627921C1E2095006B100B /* Random.swift */,
@@ -288,8 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7506278B1C1E1AA0006B100B /* StringStuff.swift in Sources */,
-				7593B7FC1C1E238600839ECA /* EncryptOne.swift in Sources */,
-				75E753091C1E292D007C9335 /* EncryptMany.swift in Sources */,
+				7593B7FC1C1E238600839ECA /* Encrypt.swift in Sources */,
 				750627951C1E2175006B100B /* Salt.swift in Sources */,
 				750627911C1E2060006B100B /* Tests.swift in Sources */,
 				750627931C1E2095006B100B /* Random.swift in Sources */,
@@ -297,8 +290,7 @@
 				750627971C1E218D006B100B /* Key.swift in Sources */,
 				7506278F1C1E1C23006B100B /* BinaryData.swift in Sources */,
 				7506279C1C1E22BF006B100B /* Encryptor.swift in Sources */,
-				75E7530B1C1E2D5D007C9335 /* DecryptMany.swift in Sources */,
-				759A12741C1E257A0081E8F3 /* DecryptOne.swift in Sources */,
+				759A12741C1E257A0081E8F3 /* Decrypt.swift in Sources */,
 				750627621C1E1A7F006B100B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
